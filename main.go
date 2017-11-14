@@ -2,15 +2,13 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"net/http"
+	"strings"
 	"time"
 
-	"encoding/json"
-
-	"strings"
-
-	"golang.org/x/net/websocket"
+	"github.com/soekchl/websocket"
 )
 
 //全局信息
