@@ -23,6 +23,11 @@ func main() {
 	datas = Datas{}
 	users = make(map[*websocket.Conn]string)
 
+	go func() {
+		time.Sleep(time.Second)
+		client()
+	}()
+
 	//绑定效果页面
 	http.HandleFunc("/", h_index)
 	//绑定socket方法
